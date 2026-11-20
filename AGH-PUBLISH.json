@@ -1,0 +1,12 @@
+{
+  "plugin_id": "agh-memory-plugin",
+  "package": "@yuhe520521/memory-plugin",
+  "version": "0.1.1",
+  "display_name": "Memory Plugin",
+  "display_name_zh": "Memory Plugin",
+  "source_version": null,
+  "repository": "https://github.com/yuhe520521/agh-plugin-memory-plugin",
+  "published_by": "AGH Hub pipeline",
+  "published_at": "2026-11-20T17:50:27.679Z",
+  "pipeline": "AGH Hub P4 → gh-publish"
+}

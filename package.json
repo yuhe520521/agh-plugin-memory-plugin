@@ -1,0 +1,46 @@
+{
+  "name": "@yuhe520521/memory-plugin",
+  "version": "0.1.1",
+  "description": "Bridges 2 tools from http://127.0.0.1:1933/mcp into AGH · 使用前需在 AGH 运行环境配置环境变量 MCP_API_KEY，配置步骤见 README",
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=24.10"
+  },
+  "agnes": {
+    "plugins": [
+      {
+        "export": "memoryPluginDcbaba0a",
+        "apiRange": "^5.0.0",
+        "id": "ext:memory-plugin-dcbaba0a/main",
+        "inject": [
+          "tools"
+        ],
+        "metadata": {
+          "displayName": "Memory Plugin",
+          "summary": "桥接 http://127.0.0.1:1933/mcp 的 2 个 MCP 工具 · 使用前需在 AGH 运行环境配置环境变量 MCP_API_KEY，配置步骤见 README",
+          "description": "把 http://127.0.0.1:1933/mcp 暴露的 2 个 MCP 工具注册为 AGH 工具。 使用前需在 AGH 运行环境配置环境变量 MCP_API_KEY，配置步骤见 README。"
+        },
+        "capabilities": {
+          "network": [
+            "127.0.0.1"
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "displayName": "Memory Plugin",
+      "summary": "桥接 http://127.0.0.1:1933/mcp 的 2 个 MCP 工具 · 使用前需在 AGH 运行环境配置环境变量 MCP_API_KEY，配置步骤见 README",
+      "description": "把 http://127.0.0.1:1933/mcp 暴露的 2 个 MCP 工具注册为 AGH 工具。 使用前需在 AGH 运行环境配置环境变量 MCP_API_KEY，配置步骤见 README。"
+    },
+    "provides": [
+      "tool"
+    ]
+  },
+  "displayName": "Memory Plugin"
+}
